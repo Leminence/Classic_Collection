@@ -110,7 +110,7 @@ canvas {
    text-align: center;
 }
 
-.pad {
+.pad, .cpad {
    position: relative;
    display: inline-block;
    margin: -1vh;
@@ -155,6 +155,33 @@ canvas {
    -moz-border-radius: 5px;
    border-radius: 1vh;
 }
+.cpad text {
+   color: #342D39;
+   font-family: Helvetica, sans-serif;
+   font-weight: bold;
+   width: 7vh;
+   height: 7vh;
+   font-size: 5vh;
+   text-align: center;
+   text-decoration: none;
+   background-color: #54455C;
+   display: block;
+   position: relative;
+   padding: 1vh;
+   z-index: 1;
+
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   text-shadow: 0px 1px 0px #000;
+   filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+   -webkit-box-shadow: inset 0 1px 0 #54455C, 0 10px 0 #54455C;
+   -moz-box-shadow: inset 0 1px 0 #54455C, 0 10px 0 #54455C;
+   box-shadow: inset 0 1px 0 #54455C, 0 1.5vh 0 #54455C;
+
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 1vh;
+}
 
 .pad text:active {
    top: 1.5vh;
@@ -162,7 +189,7 @@ canvas {
 
    -webkit-box-shadow: inset 0 0px 0 #342D39, inset 0 -3px 0 #D85150;
    -moz-box-shadow: inset 0 0px 0 #342D39, inset 0 -3px 0 #D85150;
-   box-shadow: inset 0 0px 0 #342D39, inset 0 -3px 0 #242527;
+   box-shadow: inset 0 0px 0 #342D39, inset 0 -3px 0 #342D39;
 }
 
 .pad:after {
