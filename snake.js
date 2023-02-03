@@ -36,13 +36,13 @@ function right() {
 }
 // Keys de movimento (desktop)
 document.addEventListener("keydown", function(event) {
-   if (event.key == "ArrowUp") {
+   if (event.key == "ArrowUp" || event.key == 87) {
       up();
-   } else if (event.key == "ArrowDown") {
+   } else if (event.key == "ArrowDown" || event.key == 83 ) {
       down();
-   } else if (event.key == "ArrowLeft") {
+   } else if (event.key == "ArrowLeft" || event.key == 65) {
       left();
-   } else if (event.key == "ArrowRight") {
+   } else if (event.key == "ArrowRight" || event.key == 68) {
       right();
    }
 });
