@@ -36,18 +36,15 @@ function right() {
 }
 // Keys de movimento (desktop)
 document.addEventListener("keydown", function(event) {
-   if (event.keyCode == "ArrowUp" || event.keyCode == 87) {
+   if (event.keyCode == 38 || event.keyCode == 87) {
       up();
-   } else if (event.keyCode == "ArrowDown" || event.keyCode == 83 ) {
+   } else if (event.keyCode == 40 || event.keyCode == 83) {
       down();
-   } else if (event.keyCode == "ArrowLeft" || event.keyCode == 65) {
+   } else if (event.keyCode == 37 || event.keyCode == 65) {
       left();
-   } else if (event.keyCode == "ArrowRight" || event.keyCode == 68) {
+   } else if (event.keyCode == 39 || event.keyCode == 68) {
       right();
-   }
-});
-document.addEventListener('keypress', function(e) {
-   if (e.key === 'Enter') {
+   } else if (e.keyCode === 13) {
       start();
    }
 });
