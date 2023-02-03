@@ -44,7 +44,7 @@ document.addEventListener("keydown", function(event) {
       left();
    } else if (event.keyCode == 39 || event.keyCode == 68) {
       right();
-   } else if (event.keyCode === 13) {
+   } else if (event.keyCode == 13) {
       start();
    }
 });
@@ -64,30 +64,6 @@ function start() {
       reiniciar();
    } else {
       pause = true;
-   }
-}
-// esconder UI mobile
-var esconder = false;
-function hide() {
-   if (esconder) {
-      esconder = false;
-      document.getElementById('inputs').style.display = "flex";
-      document.getElementById('canvas').style.width = "44vh";
-      document.getElementById('title').style.top = "30vh";
-      document.getElementById('title').style.fontSize = "5vh";
-      document.getElementById('score').style.width = "44vh";
-      document.getElementById('score').style.fontSize = "3vh";
-      document.getElementById('score').style.top = "54vh";
-   } else {
-      esconder = true;
-      document.getElementById('inputs').style.display = "none";
-      document.getElementById('canvas').style.width = "69vh";
-      document.getElementById('title').style.top = "50vh";
-      document.getElementById('title').style.fontSize = "10vh";
-      document.getElementById('title').style.width = "66vh";
-      document.getElementById('score').style.width = "69vh";
-      document.getElementById('score').style.fontSize = "4vh";
-      document.getElementById('score').style.top = "84.5vh";
    }
 }
 // variaveis ingame

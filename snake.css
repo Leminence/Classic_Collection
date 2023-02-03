@@ -28,7 +28,8 @@ canvas {
    background-color: #ABCB99;
    background-size: cover;
    margin-top: 2vh;
-   width: 44vh;
+   min-width: 44vh;
+   width: auto;
    border: 2vh solid #54455C;
    border-top: 1vh solid #54455C;
    border-bottom: 1vh solid #54455C;
@@ -40,8 +41,8 @@ canvas {
 .score {
    border-top: none;
    position: absolute;
-   line-height: 5.4vh;
-   top: 54vh;
+   margin-top: -6.1vh;
+   top: auto;
    width: 44vh;
    height: 4vh;
    text-align: center;
@@ -50,26 +51,25 @@ canvas {
    font-size: 3vh;
 }
 
-.title {
-   display: block;
-   width: 40vh;
-   color: #8F4135;
-   font-size: 5vh;
-   position: absolute;
-   top: 30vh;
-   left: 50%;
-   white-space: nowrap;
-   overflow: hidden;
-   transform: translate(-50%, -50%);
-   animation: type 2s steps(60, end);
-}
-
 @keyframes type {
    from {
       width: 0;
    }
 }
 
+.title {
+   display: block;
+   width: 40vh;
+   color: #8F4135;
+   font-size: 5vh;
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   white-space: nowrap;
+   overflow: hidden;
+   transform: translate(-50%, -50%);
+   animation: type 2s steps(60, end);
+}
 .pause {
    position: absolute;
    top: 90vh;
@@ -98,6 +98,22 @@ canvas {
    margin-top: 7vh;
    display: flex;
    justify-content: center;
+}
+
+@media screen and (min-width: 30em) and (orientation: landscape) {
+   .inputs {
+      display: none;
+   }
+
+   .title {
+      top: 45%;
+      font-size: 7vh;
+   }
+
+   .score {
+      margin-top: -8.1vh;
+      font-size: 5vh;
+   }
 }
 
 .DPAD {
