@@ -178,7 +178,7 @@ canvas {
 
    -webkit-box-shadow: inset 0 1px 0 #54455C, 0 10px 0 #54455C;
    -moz-box-shadow: inset 0 1px 0 #54455C, 0 10px 0 #54455C;
-   box-shadow: inset 0 1px 0 #54455C, 0 1.5vh 0 #54455C;
+   box-shadow: inset 0 1px 0 #54455C, 0 0px 0 #54455C;
 
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
