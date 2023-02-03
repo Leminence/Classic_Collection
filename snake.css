@@ -110,7 +110,8 @@ canvas {
    text-align: center;
 }
 
-.pad, .cpad {
+.pad,
+.cpad {
    position: relative;
    display: inline-block;
    margin: -1vh;
@@ -155,6 +156,7 @@ canvas {
    -moz-border-radius: 5px;
    border-radius: 1vh;
 }
+
 .cpad text {
    color: #342D39;
    font-family: Helvetica, sans-serif;
