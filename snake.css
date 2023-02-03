@@ -38,17 +38,20 @@ canvas {
    box-shadow: 0 0.5vh 0 #181818;
 }
 
-.score {
+.score, .speed {
    border-top: none;
    position: absolute;
-   margin-top: -6.1vh;
-   top: auto;
-   width: 44vh;
-   height: 4vh;
+   margin-top: -6vh;
    text-align: center;
+   width: 20vh;
+   height: 4vh;
    display: block;
    color: black;
-   font-size: 3vh;
+   font-size: 2.5vh;
+   right: 53%;
+}
+.speed {
+   left: 53%;
 }
 
 @keyframes type {
@@ -84,13 +87,14 @@ canvas {
    text-align: center;
 }
 
-.middle,
-.options {
-   display: flex;
+.middle {
    justify-content: center;
+   display: flex;
 }
 
 .options {
+   display: flex;
+   justify-content: center;
    margin-top: 2vh;
 }
 
@@ -110,9 +114,9 @@ canvas {
       font-size: 7vh;
    }
 
-   .score {
-      margin-top: -8.1vh;
-      font-size: 5vh;
+   .score, .speed {
+      margin-top: -7.5vh;
+      font-size: 4vh;
    }
 }
 

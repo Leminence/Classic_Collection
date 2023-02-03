@@ -82,6 +82,7 @@ function pontos() {
       yfruit = Math.floor(Math.random() * (campo + (campo / 4) - 3) + 1) * size;
    }
    document.getElementById('score').innerHTML = "Score: " + score;
+   document.getElementById('speed').innerHTML = "Speed: " + fps;
 }
 // spawn inicial
 var xsnake = Math.floor(Math.random() * (campo - 2) + 1) * size;
