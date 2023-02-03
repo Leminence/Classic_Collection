@@ -29,7 +29,6 @@ canvas {
    background-size: cover;
    margin-top: 2vh;
    min-width: 44vh;
-   width: auto;
    border: 2vh solid #54455C;
    border-top: 1vh solid #54455C;
    border-bottom: 1vh solid #54455C;
@@ -105,6 +104,9 @@ canvas {
 }
 
 @media screen and (min-width: 30em) and (orientation: landscape) {
+   canvas {
+      width: 68vh;
+   }
    .inputs {
       display: none;
    }
@@ -115,7 +117,7 @@ canvas {
    }
 
    .score, .speed {
-      margin-top: -7.5vh;
+      margin-top: -7.6vh;
       font-size: 4vh;
    }
 }
