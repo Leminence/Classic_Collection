@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>🐍</title>
+   <link rel="stylesheet" href="snake.css">
+</head>
+
+<body>
+   <div class="total">
+      <div class="c">
+         <canvas id="canvas" onclick="start()"></canvas>
+         <div id="title" class="title">
+            <text id="GO" class="gameover">SNAKE</text><br>
+            <text id="GO" class="textGO">press start</text>
+         </div>
+         <div class="middle">
+            <div class="score" id="score">Score: 0</div>
+         </div>
+      </div>
+      <div class="options">
+         <div id="restart" class="restart" onclick="start()"><text>start</text></div>
+         <div id="hide" class="restart" onclick="hide()"><text>select</text></div>
+      </div>
+      <div class="inputs" id="inputs">
+         <div class="DPAD">
+            <div class="dpad">
+               <div id="up" class="pad" onclick="up()">
+                  <text>▲</text>
+               </div>
+            </div>
+            <div class="dpad">
+               <div id="left" class="pad" onclick="left()">
+                  <text>◀</text>
+               </div>
+               <div class="pad">
+                  <text></text>
+               </div>
+               <div id="right" class="pad" onclick="right()">
+                  <text>▶</text>
+               </div>
+            </div>
+            <div class="dpad">
+               <div id="down" class="pad" onclick="down()">
+                  <text>▼</text>
+               </div>
+            </div>
+         </div>
+         <div class="A">
+            <div id="action" class="action">
+               <text>A</text>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="snake.js"></script>
+</body>
+
+</html>
