@@ -37,7 +37,8 @@ canvas {
    box-shadow: 0 0.5vh 0 #181818;
 }
 
-.score, .speed {
+.score,
+.speed {
    border-top: none;
    position: absolute;
    margin-top: -6vh;
@@ -49,6 +50,7 @@ canvas {
    font-size: 2.5vh;
    right: 53%;
 }
+
 .speed {
    left: 53%;
 }
@@ -72,6 +74,7 @@ canvas {
    transform: translate(-50%, -50%);
    animation: type 2s steps(60, end);
 }
+
 .pause {
    position: absolute;
    top: 90vh;
@@ -107,6 +110,7 @@ canvas {
    canvas {
       width: 68vh;
    }
+
    .inputs {
       display: none;
    }
@@ -116,7 +120,8 @@ canvas {
       font-size: 7vh;
    }
 
-   .score, .speed {
+   .score,
+   .speed {
       margin-top: -7.6vh;
       font-size: 4vh;
    }

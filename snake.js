@@ -16,18 +16,21 @@ function up() {
       sx = 0;
    }
 }
+
 function down() {
    if (dy != -velocity) {
       sy = velocity;
       sx = 0;
    }
 }
+
 function left() {
    if (dx != velocity) {
       sx = -velocity;
       sy = 0;
    }
 }
+
 function right() {
    if (dx != -velocity) {
       sx = velocity;
@@ -51,6 +54,7 @@ document.addEventListener("keydown", function(event) {
 // mecânica de pause
 var pause = true;
 var gameover = false;
+
 function start() {
    if (pause) {
       document.getElementById('title').style.display = "none";
@@ -70,6 +74,7 @@ function start() {
 var score = 0;
 var perdeu = 0;
 var tamanho = 3;
+
 function pontos() {
    // Score, tamanho da cobra e respawn da fruta
    if (xfruit == xsnake && yfruit == ysnake) {
@@ -99,6 +104,7 @@ var snake_lost = new Image();
 snake_lost.src = 'sprites/snake_lost.png';
 var fruit = new Image();
 fruit.src = 'sprites/fruit.png';
+
 function entidades() {
    // cria a cobra
    c.drawImage(snake_sprite, xsnake, ysnake, size, size);
@@ -129,6 +135,7 @@ if (Math.random() < 0.5) {
 } else {
    var sy = velocity;
 }
+
 function movimento() {
    // movimento
    dx = sx;
@@ -149,6 +156,7 @@ function movimento() {
       ysnake = canvas.height - size * 3;
    }
 }
+
 function segmentos() {
    // verifica se houve colisão com os segmentos diminui o tamanho do corpo
    for (let i = 0; i < snakebody.length; i++) {
