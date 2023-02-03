@@ -44,7 +44,7 @@ document.addEventListener("keydown", function(event) {
       left();
    } else if (event.keyCode == 39 || event.keyCode == 68) {
       right();
-   } else if (e.keyCode === 13) {
+   } else if (event.keyCode === 13) {
       start();
    }
 });
