@@ -10,7 +10,7 @@ body {
    padding: 0;
    background: #C6C1BB;
    font-family: minhafonte;
-   display: flex;
+   display: block;
    justify-content: center;
 }
 
@@ -21,6 +21,7 @@ body {
 }
 
 .c {
+   justify-content: center;
    margin-bottom: -2.5vh;
 }
 
