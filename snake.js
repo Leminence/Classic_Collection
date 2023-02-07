@@ -54,7 +54,6 @@ document.addEventListener("keydown", function(event) {
 // mecânica de pause
 var pause = true;
 var gameover = false;
-
 function start() {
    if (pause) {
       document.getElementById('title').style.display = "none";
@@ -80,7 +79,7 @@ function pontos() {
    if (xfruit == xsnake && yfruit == ysnake) {
       score++;
       tamanho++;
-      if (score % 6 == 0) {
+      if (score % 8 == 0) {
          fps++;
       }
       xfruit = Math.floor(Math.random() * (campo - 2) + 1) * size;
