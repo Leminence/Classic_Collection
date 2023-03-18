@@ -153,6 +153,9 @@ canvas {
    justify-content: center;
 }
 
+.sel {
+   color: #54455C;
+}
 @media screen and (min-width: 30em) and (orientation: landscape) {
    canvas {
       width: 68vh;

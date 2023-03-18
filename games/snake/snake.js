@@ -118,12 +118,12 @@ function snake() {
    pontos();
    if (pause) {
       borda();
-      document.getElementById('GO').innerHTML = "the game is paused";
+      document.getElementById('GO').innerHTML = "PAUSED";
       return;
    }
    else if (gameover) {
       borda();
-      document.getElementById('GO').innerHTML = "game over";
+      document.getElementById('GO').innerHTML = "GAME OVER";
       return;
    }
    setTimeout(function() {

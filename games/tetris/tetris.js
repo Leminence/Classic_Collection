@@ -1,9 +1,3 @@
-// Tetris
-
-// formas
-
-// seleção aleatória
-
 next = []
 for (let i = 0; i < 2; i++) {
    next.push(Math.floor(Math.random() * fA.length));
@@ -166,6 +160,7 @@ function colisao() {
       }
    }
 }
+
 function tetris() {
    borda();
    blocos();
