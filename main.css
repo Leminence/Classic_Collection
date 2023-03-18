@@ -42,18 +42,60 @@ canvas {
 .speed {
    border-top: none;
    position: absolute;
-   margin-top: -6vh;
+   margin-top: -7vh;
    text-align: center;
    width: 20vh;
    height: 4vh;
    display: block;
    color: black;
-   font-size: 2.5vh;
+   font-size: 3vh;
    right: 53%;
 }
 
 .speed {
    left: 53%;
+}
+
+.score2,
+.lines {
+   border-top: none;
+   position: absolute;
+   margin-top: -6vh;
+   text-align: center;
+   width: 10vh;
+   height: 4vh;
+   display: flex;
+   color: black;
+   font-size: 3.5vh;
+   left: 8vh;
+}
+
+.lines {
+   margin-top: 4vh;
+}
+
+.final {
+   position: relative;
+   top: -58vh;
+   display: none;
+   text-align: center;
+   justify-content: center;
+}
+
+.final1,
+.final2 {
+   border-top: none;
+   text-align: center;
+   width: 20vh;
+   height: 4vh;
+   display: flex;
+   color: black;
+   font-size: 3.5vh;
+}
+
+.final2 {
+   position: absolute;
+   top: 46.5vh;
 }
 
 @keyframes type {
@@ -62,7 +104,8 @@ canvas {
    }
 }
 
-.title {
+.title,
+.selector {
    display: block;
    width: 40vh;
    color: #8F4135;
@@ -76,12 +119,8 @@ canvas {
    animation: type 2s steps(60, end);
 }
 
-.pause {
-   position: absolute;
-   top: 90vh;
-   left: 16vh;
-   display: flex;
-   justify-content: center;
+.title {
+   display: none;
 }
 
 .buttons {
@@ -91,8 +130,15 @@ canvas {
 }
 
 .middle {
+   display: none;
+}
+
+.middle2 {
+   position: absolute;
+   left: 52%;
+   top: 30%;
    justify-content: center;
-   display: flex;
+   display: none;
 }
 
 .options {
@@ -116,7 +162,8 @@ canvas {
       display: none;
    }
 
-   .title {
+   .title,
+   .selector {
       top: 45vh;
       font-size: 6vh;
    }
@@ -125,6 +172,19 @@ canvas {
    .speed {
       margin-top: -7.6vh;
       font-size: 4vh;
+   }
+
+   .middle2 {
+      top: 40%;
+   }
+
+   .score2,
+   .lines {
+      font-size: 5.5vh;
+   }
+
+   .lines {
+      margin-top: 10vh;
    }
 }
 

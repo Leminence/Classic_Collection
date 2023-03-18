@@ -6,26 +6,39 @@
    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>🐍</title>
-   <link rel="stylesheet" href="snake.css">
+   <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
    <div class="total">
       <div class="c">
          <canvas id="canvas"></canvas>
+         <div id="selector" class="selector">
+            Select Game:
+            <div id="jogo1" class="jogo1">Snake</div>
+            <div id="jogo2" class="jogo2">Tetris</div>
+         </div>
          <div id="title" class="title">
-            <text id="GO">Snake</text>
+            <text id="GO">The game is paused</text>
             <br>
             <text>press start</text>
          </div>
-         <div class="middle">
+         <div class=final id="final">
+            <div class="final1" id="final1">Hello world</div>
+            <div class="final2" id="final2">Hello world</div>
+         </div>
+         <div class="middle" id="middle">
             <div class="score" id="score">Score: 0</div>
-            <div class="speed" id="speed">Speed: 0</div>
+            <div class="speed" id="speed">Speed: 12</div>
+         </div>
+         <div class="middle2" id="middle2">
+            <div class="score2" id="score2">Score:<br> 0</div>
+            <div class="lines" id="lines">Lines:<br> 0</div>
          </div>
       </div>
       <div class="options">
          <div id="restart" class="restart" onclick="start()"><text>start</text></div>
-         <div id="hide" class="restart" onclick="hide()"><text>select</text></div>
+         <div id="hide" class="restart" onclick="select()"><text>select</text></div>
       </div>
       <div class="inputs" id="inputs">
          <div class="DPAD">
@@ -52,13 +65,17 @@
             </div>
          </div>
          <div class="A">
-            <div id="action" class="action">
+            <div id="action" class="action" onclick="action()">
                <text>A</text>
             </div>
          </div>
       </div>
    </div>
-   <script src="snake.js"></script>
+   <script src="main.js"></script>
+   <script src="inputs.js"></script>
+   <script src="games/tetris/render_tetris.js"></script>
+   <script src="games/snake/snake.js"></script>
+   <script src="games/tetris/tetris.js"></script>
 </body>
 
 </html>
