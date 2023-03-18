@@ -17,12 +17,12 @@ function formas() {
             m++;
          }
       }
-   }
-   max = m;
-   for (let i = 0; i < fA[next[1]][0][0].length; i++) {
-      for (let k = 0; k < fA[next[1]][0][0].length; k++) {
-         if (fA[next[1]][0][i][k] === 1) {
-            proximo.push({ x: (k + 15) * size + wpos, y: (i + 3) * size + hpos })
+      max = m;
+      for (let i = 0; i < fA[next[1]][1][0].length; i++) {
+         for (let k = 0; k < fA[next[1]][1][0].length; k++) {
+            if (fA[next[1]][1][i][k] === 1) {
+               proximo.push({ x: (k + 15) * size + wpos - 3, y: (i + 3) * size + hpos })
+            }
          }
       }
    }
