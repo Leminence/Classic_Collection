@@ -25,6 +25,7 @@ function reiniciar() {
       tamanho = 3;
       snakebody = []
       partes = []
+      perdeu = 0;
       xsnake = Math.floor(Math.random() * (campo - 2) + 1) * size;
       ysnake = Math.floor(Math.random() * (campo + (campo / 4) - 3) + 1) * size;
       xfruit = Math.floor(Math.random() * (campo - 2) + 1) * size;
