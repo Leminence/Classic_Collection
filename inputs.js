@@ -100,7 +100,7 @@ function start() {
          snake();
       } else if (sel == 2) {
          document.getElementById('middle2').style.display = "block";
-         fps = 45;
+         fps = 60;
          tetris();
       }
    } else if (gameover) {

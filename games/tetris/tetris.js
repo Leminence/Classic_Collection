@@ -52,6 +52,7 @@ let bx = 0;
 let by = 1;
 let hpos = 0;
 let wpos = 0;
+
 let prevL = false;
 let prevR = false;
 let col = false;
@@ -145,14 +146,12 @@ function colisao() {
          if (bloco[k].x == momentum[i].x && bloco[k].y + size == momentum[i].y) {
             add();
          }
-         if (bloco[k].x + size === momentum[i].x) {
-            if (bloco[k].y >= momentum[i].y - size && bloco[k].y <= momentum[i].y) {
+         if (bloco[k].y >= momentum[i].y - size && bloco[k].y <= momentum[i].y) {
+            if (bloco[k].x + size === momentum[i].x) {
                prevR = true;
                col = true;
             }
-         }
-         if (bloco[k].x - size === momentum[i].x) {
-            if (bloco[k].y >= momentum[i].y - size && bloco[k].y <= momentum[i].y) {
+            if (bloco[k].x - size === momentum[i].x) {
                prevL = true;
                col = true;
             }
