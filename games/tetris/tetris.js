@@ -66,6 +66,25 @@ function queda() {
    wpos += bx;
    bx = 0;
 }
+topy = 0
+prox = 0;
+
+function totalfall() {
+   for (let i = 0; i < momentum.length; i++) {
+      for (let k = 0; k < bloco.length; k++) {
+         if (momentum[i].x == bloco[k].x) {
+            prox = momentum[i].y
+            if (prox < topy) {
+               topy = prox;
+               console.log(topy)
+            }
+            for (let j = 0; j < bloco.length; j++) {
+               bloco[j].y += topy - bloco[j].y - size;
+            }
+         }
+      }
+   }
+}
 
 function add() {
    for (let i = 0; i < bloco.length; i++) {
@@ -127,7 +146,7 @@ function colisao() {
    prevL = false;
    col = false;
    for (let i = 0; i < bloco.length; i++) {
-      if (bloco[i].y == canvas.height - size * 2 + 2) {
+      if (bloco[i].y >= canvas.height - size * 2 + 2) {
          add();
       }
       if (bloco[i].x > canvas.width - size * 8) {

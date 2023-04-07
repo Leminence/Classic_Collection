@@ -9,7 +9,7 @@ function pontos() {
       if (xfruit == xsnake && yfruit == ysnake) {
          score++;
          tamanho++;
-         if (score % 8 == 0) {
+         if (score % 10 == 0) {
             fps++;
          }
          document.getElementById('score').innerHTML = "Score: " + score;
@@ -61,6 +61,7 @@ function movimento() {
    // movimento
    dx = sx;
    dy = sy;
+
    xsnake += dx;
    ysnake += dy;
 
@@ -110,6 +111,7 @@ function segmentos() {
       }
    }
 }
+
 function snake() {
    borda();
    entidades();
@@ -130,4 +132,3 @@ function snake() {
       requestAnimationFrame(snake)
    }, 1000 / fps);
 }
-

@@ -31,6 +31,9 @@ function up() {
    if (selecionado == false) {
       selector();
    }
+   if (sel == 2) {
+      totalfall();
+   }
 }
 
 function down() {
